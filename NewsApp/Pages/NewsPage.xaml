@@ -4,7 +4,7 @@
              x:Class="NewsApp.Pages.NewsPage"
              BackgroundColor="White">
     <Grid RowDefinitions="Auto, Auto, *">
-        <Label Grid.Row="0" Text="News App" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Title"></Label>
+        <Label Grid.Row="0" Text="News App" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Title" TextColor="Black"></Label>
         <CollectionView Grid.Row="1" x:Name="CvCategories" HeightRequest="60">
             <CollectionView.ItemsLayout>
                 <LinearItemsLayout Orientation="Horizontal" ItemSpacing="5"/>
@@ -25,8 +25,8 @@
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout Padding="10">
-                        <Image HeightRequest="200"/>
-                        <Label FontSize="Medium"/>
+                        <Image HeightRequest="200" Source="{Binding Image}"/>
+                        <Label FontSize="Medium" Text="{Binding Title}" TextColor="Black"/>
                     </StackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>

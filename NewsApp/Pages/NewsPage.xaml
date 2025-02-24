@@ -12,7 +12,7 @@
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout Padding="10">
-                        <Label FontSize="Medium"/>
+                        <Label FontSize="Medium" TextColor="Black" Text="{Binding Name}"/>
                     </StackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
